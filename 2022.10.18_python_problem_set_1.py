@@ -21,8 +21,8 @@ def palindrome():
 
 def main():
     greeting()
-    is_multiple(9,4)
-    is_multiple(140, 10)
+    print(is_multiple(9,4))
+    print(is_multiple(140, 10))
     palindrome()
 
 if(__name__ == "__main__"):

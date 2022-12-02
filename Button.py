@@ -23,8 +23,16 @@ class Button:
     def move(self, dx, dy):
         self.body.move(dx, dy)
         self.text.move(dx, dy)
-    def editText(self, text):
+    def setText(self, text):
         self.text = Text(self.body.getCenter(), text)
+    def setBorderWeight(self, border_weight):
+        self.border_weight = border_weight
+    def setFillColor(self, fill_color):
+        self.fill_color = fill_color
+    def setBorderColor(self, border_color):
+        self.border_color = border_color
+    def setTextColor(self, text_color):
+        self.text_color = text_color
     def isClick(self, point):
         point1 = self.body.getP1()
         point2 = self.body.getP2()
